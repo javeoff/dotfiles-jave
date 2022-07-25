@@ -1,0 +1,33 @@
+tap 'heroku/brew'
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/core'
+tap 'homebrew/services'
+
+# Programming
+brew 'git'
+brew 'yarn'
+brew 'nginx'
+brew 'nvm'
+
+# Data services
+brew 'postgresql'
+brew 'redis'
+
+# PHP
+brew 'php'
+brew 'composer'
+
+# Terminal
+brew 'tmux'
+brew 'htop'
+brew 'fzf'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+brew 'zsh'
+brew 'neovim'
+brew 'trash'
+brew 'ripgrep'
+brew 'tree-sitter'
+
+cask 'iterm2'

@@ -1,0 +1,17 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Daniil Jave
+	email = javeoff@yandex.ru
+[core]
+	excludesFile = /Users/daniiljave/.gitignore-global
+	autocrlf = input
+[alias]
+    parent = "!git show-branch | grep '*' | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
+    l = "!tig log"
+    r = "!tig reflog"
+    branches = "!git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
+    undo = "!git reset HEAD~1 --mixed"

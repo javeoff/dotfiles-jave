@@ -1,0 +1,17 @@
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea
+.local_history
+.local-history
+
+# NPM
+node_modules
+*.local

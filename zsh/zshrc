@@ -1,0 +1,12 @@
+# Paths
+export PATH=/usr/local/bin:$PATH
+
+# Include configuration files
+source $HOME/.config/env.sh
+
+# Include modules
+source $ZSH_MODULES/nvm.sh
+source $ZSH_MODULES/git.sh
+source $ZSH_MODULES/launchctl.sh
+source $ZSH_MODULES/sql.sh
+source $ZSH_MODULES/alias.sh
