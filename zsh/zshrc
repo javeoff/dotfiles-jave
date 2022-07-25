@@ -10,3 +10,9 @@ source $ZSH_MODULES/git.sh
 source $ZSH_MODULES/launchctl.sh
 source $ZSH_MODULES/sql.sh
 source $ZSH_MODULES/alias.sh
+
+# Include plugins
+plugins=(git docker history common-aliases aliases tig)
+
+source $ZSH_PLUGINS/vcs.zsh
+source $ZSH_PLUGINS/prompt.zsh
