@@ -5,14 +5,25 @@ export PATH=/usr/local/bin:$PATH
 source $HOME/.config/env.sh
 
 # Include modules
-source $ZSH_MODULES/nvm.sh
-source $ZSH_MODULES/git.sh
-source $ZSH_MODULES/launchctl.sh
-source $ZSH_MODULES/sql.sh
-source $ZSH_MODULES/alias.sh
+source $ZSH_DIR/modules/nvm.sh
+source $ZSH_DIR/modules/git.sh
+source $ZSH_DIR/modules/launchctl.sh
+source $ZSH_DIR/modules/sql.sh
+source $ZSH_DIR/modules/alias.sh
 
 # Include plugins
-plugins=(git docker history common-aliases aliases tig)
+plugins=(
+    git
+    docker
+    history
+    common-aliases
+    aliases
+    tig
+    frontend-search # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/frontend-search/README.md
+)
 
-source $ZSH_PLUGINS/vcs.zsh
-source $ZSH_PLUGINS/prompt.zsh
+source $ZSH_DIR/plugins/vcs.zsh
+source $ZSH_DIR/plugins/prompt.zsh
+
+source $ZSH_DIR/bin/ohmyzsh/oh-my-zsh.sh
+source $ZSH_DIR/bin/zsh-autosuggestions/zsh-autosuggestions.zsh

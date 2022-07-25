@@ -2,8 +2,7 @@
 export CONFIG=$HOME/.config
 
 # Zsh paths
-export ZSH_MODULES=$CONFIG/zsh/modules
-export ZSH_PLUGINS=$CONFIG/zsh/plugins
+export ZSH_DIR=$CONFIG/zsh
 
 # Dotfiles paths
 export DOTFILES_DIR=~/projects/dotfiles-jave
